@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>View City</h2>
+<a href="/citys">List city</a>
+<form method="post" th:object="${c}">
+    <div>
+        <label>Name</label>
+        <input name="name" th:field="*{name}">
+    </div>
+    <div>
+        <label>Country</label>
+        <input name="country" th:field="*{country}">
+    </div>
+    <div>
+        <label>Acreage</label>
+        <input name="acreage" th:field="*{acreage}">
+    </div>
+    <div>
+        <label>Population</label>
+        <input name="population" th:field="*{population}">
+    </div>
+    <div>
+        <label>GDP</label>
+        <input name="gdp" th:field="*{gdp}">
+    </div>
+    <div>
+        <label>Description</label>
+        <input name="description" th:field="*{description}">
+    </div>
+</form>
+</body>
+</html>
